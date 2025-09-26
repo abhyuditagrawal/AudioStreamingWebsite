@@ -1,0 +1,108 @@
+/* Reset and global styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #8B0000; /* Chestnut text color */
+}
+
+/* Header styles */
+header {
+    background-color: #8B0000; /* Chestnut header background */
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px; /* Larger font for the title */
+    color: #fff; /* White title text color */
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Search bar styles */
+input[type="text"] {
+    padding: 12px;
+    width: 80%;
+    max-width: 400px; /* Limit the width of the search bar */
+    border: 2px solid #000; /* Black border */
+    border-radius: 25px; /* Rounded corners for the search bar */
+    font-size: 16px;
+    background-color: #8B0000; /* Chestnut background color */
+    color: #fff; /* White text color */
+    outline: none; /* Remove the default blue outline on focus */
+    transition: border-color 0.3s; /* Add a transition for border color */
+}
+
+/* Change border color on focus */
+input[type="text"]:focus {
+    border-color: #000; /* Black border color on focus */
+}
+
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Music list styles */
+.music-list {
+    display: grid; /* Use grid layout for music items */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 20px;
+}
+
+.music-item {
+    padding: 20px;
+    background-color: #8B0000; /* Chestnut background for music items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.2s; /* Add a subtle hover effect */
+}
+
+.music-item img {
+    max-width: 100%; /* Ensure images fit within their containers */
+    height: auto; /* Maintain image aspect ratio */
+    display: block; /* Remove any extra space below the image */
+    margin: 10px 0; /* Add some space between the image and title */
+}
+
+.music-item:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+/* Audio player styles */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* About us section styles */
+.about-us {
+    background-color: #000; /* Dark background for the about section */
+    color: #8B0000; /* Chestnut text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-top: 0;
+    font-size: 24px; /* Larger font for the section title */
+    color: #fff; /* White title text color */
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us li {
+    font-size: 18px;
+    margin: 10px 0;
+}
